@@ -11,10 +11,7 @@ setopt autocd
 
 # worksapces variable for tmuxs to read in
 export WORKSPACES="\
-$HOME/Documents/prog:\
-$HOME/Documents/repos:\
-$HOME/Documents/work:\
-$HOME/mit/s2:\
+$HOME/Documents:\
 $HOME/.config/nvim:\
 $HOME/.config/borders:\
 $HOME/.config/aerospace:\

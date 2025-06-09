@@ -188,8 +188,8 @@ automatically-unhide-macos-hidden-apps = false
     if.app-id = 'com.zoom.video'
     run = 'move-node-to-workspace 4'
 [[on-window-detected]]
-    if.app-id = 'com.tinyspeck.slackmacgap'
-    run = 'move-node-to-workspace 4'
+    if.app-id = 'com.microsoft.teams2'
+    run = 'move-node-to-workspace 8'
 [[on-window-detected]]
     if.app-name-regex-substring = 'zoom'
     run = ['layout floating', 'move-node-to-workspace 4']
@@ -214,6 +214,9 @@ automatically-unhide-macos-hidden-apps = false
 
 [[on-window-detected]]
     if.app-id = 'com.hnc.Discord'
+    run = 'move-node-to-workspace 8'
+[[on-window-detected]]
+    if.app-id = 'com.tinyspeck.slackmacgap'
     run = 'move-node-to-workspace 8'
 
 [[on-window-detected]]
