@@ -16,6 +16,8 @@ $HOME/.config/nvim:\
 $HOME/.config/borders:\
 $HOME/.config/aerospace:\
 $HOME/.config/alacritty:\
+$HOME/.config/kitty:\
+$HOME/dots:\
 "
 
 # =============================================
