@@ -55,6 +55,7 @@ alias ls='ls -G'
 alias c='clear'
 alias s='ls'
 alias e='exit'
+alias iv='kitty +kitten icat'
 
 alias v='nvim'
 alias vc='nvim ~/.config/nvim'
@@ -72,12 +73,14 @@ alias sz='source ~/.zshrc'
 alias lpp='latexmk -pdf -pvc'
 alias cp='cp -r'
 
+alias docker='podman'
+
 mkcd() {
   mkdir -p "$1" && cd "$1"
 }
 
 z() {
-  zathura --fork "$@" > /dev/null 2>&1a
+  zathura --fork "$@" > /dev/null 2>&1
 }
 
 # =============================================

@@ -181,6 +181,9 @@ automatically-unhide-macos-hidden-apps = false
     if.app-id = 'com.openai.chat'
     run = 'move-node-to-workspace 3'
 [[on-window-detected]]
+    if.app-id = 'com.anthropic.claudefordesktop'
+    run = 'move-node-to-workspace 3'
+[[on-window-detected]]
     if.app-id = 'com.figma.Desktop'
     run = 'move-node-to-workspace 3'
 
@@ -188,8 +191,9 @@ automatically-unhide-macos-hidden-apps = false
     if.app-id = 'com.zoom.video'
     run = 'move-node-to-workspace 4'
 [[on-window-detected]]
-    if.app-id = 'com.microsoft.teams2'
+    if.app-name-regex-substring = 'Microsoft Teams'
     run = 'move-node-to-workspace 8'
+
 [[on-window-detected]]
     if.app-name-regex-substring = 'zoom'
     run = ['layout floating', 'move-node-to-workspace 4']
