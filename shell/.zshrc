@@ -3,13 +3,15 @@ source /etc/zshrc
 export PATH="\
 ${ASDF_DATA_DIR:-$HOME/.asdf}/shims\
 :/opt/homebrew/bin\
+:/opt/homebrew/anaconda3/bin\
 :$HOME/.local/bin\
 :$HOME/go/bin\
 :$PATH"
 
 setopt autocd
 
-# worksapces variable for tmuxs to read in
+
+# workspaces variable for tmuxs to read in
 export WORKSPACES="\
 $HOME/Documents:\
 $HOME/.config/nvim:\
@@ -72,8 +74,7 @@ alias gb='git branch'
 alias sz='source ~/.zshrc'
 alias lpp='latexmk -pdf -pvc'
 alias cp='cp -r'
-
-alias docker='podman'
+alias sv='source .venv/bin/activate'
 
 mkcd() {
   mkdir -p "$1" && cd "$1"
@@ -82,6 +83,23 @@ mkcd() {
 z() {
   zathura --fork "$@" > /dev/null 2>&1
 }
+
+# =============================================
+# Conda initialization code
+
+#__conda_setup="$('/opt/homebrew/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
+#        . "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/opt/homebrew/anaconda3/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
+
+eval "$(direnv hook zsh)"
 
 # =============================================
 # Additional zsh configuration

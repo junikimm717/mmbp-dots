@@ -170,6 +170,9 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
     if.app-name-regex-substring = '^Brave Browser$'
     run = 'move-node-to-workspace 2'
+[[on-window-detected]]
+    if.app-name-regex-substring = 'Chromium'
+    run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
     if.app-id = 'dev.kdrag0n.MacVirt'
