@@ -1,10 +1,13 @@
 source /etc/zshrc
 
+export PATH="/opt/homebrew/bin:$PATH"
+
 export PATH="\
 ${ASDF_DATA_DIR:-$HOME/.asdf}/shims\
-:/opt/homebrew/bin\
 :$HOME/.local/bin\
 :$HOME/go/bin\
+:$(brew --prefix)/opt/riscv-gnu-toolchain/bin\
+:$HOME/Library/Application Support/texbld/bin\
 :$PATH"
 
 setopt autocd
@@ -14,7 +17,8 @@ export WORKSPACES="\
 $HOME/Documents/prog:\
 $HOME/Documents/repos:\
 $HOME/Documents/work:\
-$HOME/mit/s2:\
+$HOME/Documents/classes:\
+$HOME/mit/s3:\
 $HOME/.config/nvim:\
 $HOME/.config/borders:\
 $HOME/.config/aerospace:\
@@ -78,7 +82,7 @@ mkcd() {
 }
 
 z() {
-  zathura --fork "$@" > /dev/null 2>&1a
+  zathura --fork "$@" > /dev/null 2>&1
 }
 
 # =============================================

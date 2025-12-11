@@ -209,6 +209,10 @@ automatically-unhide-macos-hidden-apps = false
     run = 'move-node-to-workspace 6'
 
 [[on-window-detected]]
+    if.app-id = 'cc.arduino.IDE2'
+    run = 'move-node-to-workspace 3'
+
+[[on-window-detected]]
     if.app-name-regex-substring = '^System Settings$'
     run = ['layout floating', 'move-node-to-workspace 7']
 
