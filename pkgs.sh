@@ -17,7 +17,7 @@ step_packages() {
   brew tap nikitabobko/tap || true
   brew tap FelixKratz/formulae || true
 
-  brew install tmux neovim kitty asdf macism aerospace jankyborders
+  brew install tmux neovim kitty asdf macism aerospace jankyborders firefox
 
   [ -d ~/.tmux/plugins/tpm ] || git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 }
