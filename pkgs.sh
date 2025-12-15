@@ -16,6 +16,7 @@ step_packages() {
 
   brew tap nikitabobko/tap || true
   brew tap FelixKratz/formulae || true
+  brew tap laishulu/homebrew || true
 
   brew install tmux neovim kitty asdf macism aerospace jankyborders firefox
 
