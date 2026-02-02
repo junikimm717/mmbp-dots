@@ -8,4 +8,6 @@ For zsh, install pure prompt, vi mode, zsh-autosuggestions, and zsh-syntax-highl
 Make sure to install aerospace window manager, tmux, kitty, and asdf vm (copy
 paste the completion stuff).
 
+The current treesitter configuration is screwed for 0.26 and later.
+
 Create an ssh key.
