@@ -6,7 +6,6 @@ export PATH="\
 ${ASDF_DATA_DIR:-$HOME/.asdf}/shims\
 :$HOME/.local/bin\
 :$HOME/go/bin\
-:$(brew --prefix)/opt/riscv-gnu-toolchain/bin\
 :$HOME/Library/Application Support/texbld/bin\
 :$PATH"
 
@@ -18,7 +17,8 @@ $HOME/Documents/prog:\
 $HOME/Documents/repos:\
 $HOME/Documents/work:\
 $HOME/Documents/classes:\
-$HOME/mit/s3:\
+$HOME/mit/s5:\
+$HOME/virt:\
 $HOME/.config/nvim:\
 $HOME/.config/borders:\
 $HOME/.config/aerospace:\
@@ -91,6 +91,7 @@ z() {
 # completion paths
 fpath=(
   "${ASDF_DATA_DIR:-$HOME/.asdf}/completions"
+  "$HOME/.colima/completion"
   "$(brew --prefix)/share/zsh/site-functions"
   $fpath
 )
